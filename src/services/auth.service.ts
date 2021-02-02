@@ -86,7 +86,6 @@ export class AuthService {
     const refreshToken = this.jwtService.sign(payload, {
       expiresIn: securityConfig.refreshIn,
     });
-
     return {
       accessToken,
       refreshToken,
